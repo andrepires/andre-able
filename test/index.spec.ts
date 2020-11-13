@@ -1,5 +1,9 @@
-import { hello } from "../src";
+import { Able } from "../src/Able";
 
-test("hello", () => {
-  expect(hello("foo")).toEqual("Hello foo");
+describe("Able", () => {
+  it("flatten() includes own name", () => {
+    expect(Able.flatten({}, ["foo"])).toContain("foo");
+  });
+
+  // ...remaining tests...
 });

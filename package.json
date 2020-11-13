@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "test-build": "npm run build && node test-build.js",
+    "ci": "npm run build && npm t"
   },
   "repository": {
     "type": "git",
